@@ -26,7 +26,8 @@ Example:
 
 Copy the .env.default to .env and set the variables to their correct values.
 Run the script using `python3 metadata_to_db.py`
-For permanent deployment invoke the script using cron
+For permanent deployment invoke the script using cron like the example below
+`*/5 * * * * /usr/bin/python3 /home/flwsb/metadata_logging/metadata_to_db.py`
 
 ## Credits
 
