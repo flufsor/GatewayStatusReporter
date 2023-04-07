@@ -20,7 +20,7 @@ Example:
 - Python3 and packages:
 	- smbus
 	- paho.mqtt
-	- dotenv
+	- python-dotenv
 
 ## Usage
 
