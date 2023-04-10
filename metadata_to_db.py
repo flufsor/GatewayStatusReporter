@@ -240,11 +240,10 @@ if __name__ == "__main__":
     payload = {
         "host": socket.gethostname(),
         "temperature": float(t[5:-3]),
-        "bus_voltage": bus_voltage,
-        "shunt_voltage": shunt_voltage,
-        "current": calculated_current,
-        "power": power,
-        "p": p,
+        "voltage": round(bus_voltage, 2),
+        "current": round(calculated_current, 2),
+        "power": round(power, 2),
+        "percentage": round(p, 2),
     }
     json_payload = json.dumps(payload)
     ret = mqtt_client.publish(os.getenv("MQTT_TOPIC"), json_payload)
